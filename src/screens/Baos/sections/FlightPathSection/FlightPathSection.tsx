@@ -22,7 +22,7 @@ export const FlightPathSection = (): JSX.Element => {
       {featureCards.map((card) => (
         <div
           key={card.id}
-          className="w-full h-full p-[30px] flex flex-col justify-start items-start gap-[15px]"
+          className="w-full h-full p-[20px] sm:p-[30px] flex flex-col justify-start items-start gap-[15px]"
           style={{
             background: 'rgba(255, 255, 255, 0.05)',
             outline: '1px rgba(255, 255, 255, 0.10) solid',
@@ -68,7 +68,7 @@ export const FlightPathSection = (): JSX.Element => {
             className="self-stretch"
             style={{
               color: '#F8C200',
-              fontSize: '18px',
+              fontSize: '16px',
               fontFamily: 'SF Mono',
               fontWeight: '700',
               wordWrap: 'break-word',
