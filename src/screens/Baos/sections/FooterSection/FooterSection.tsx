@@ -54,7 +54,7 @@ const socialLinks = [
 
 export const FooterSection = (): JSX.Element => {
   return (
-    <footer className="flex flex-col w-full items-center gap-8 py-12 px-4 bg-[#0a0909]">
+    <footer className="flex flex-col w-full items-center gap-6 md:gap-8 py-8 md:py-12 px-4 bg-[#0a0909]">
       {/* Logo */}
       <div className="relative w-[48.61px] h-12">
         <div className="relative w-12 h-[51px] -top-px -left-px">
@@ -95,12 +95,12 @@ export const FooterSection = (): JSX.Element => {
       </div>
 
       {/* Footer Links */}
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-8 md:gap-12 relative w-full">
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 relative w-full">
         {footerLinks.map((link, index) => (
           <a
             key={index}
             href={link.href}
-            className="relative w-fit [font-family:'IBM_Plex_Mono',monospace] font-bold text-[#f8c100] text-base tracking-[0] leading-[normal] text-center hover:text-[#f8c100]/80 transition-colors"
+            className="relative w-fit [font-family:'IBM_Plex_Mono',monospace] font-bold text-[#f8c100] text-sm sm:text-base tracking-[0] leading-[normal] text-center hover:text-[#f8c100]/80 transition-colors"
           >
             {link.text}
           </a>
@@ -108,18 +108,18 @@ export const FooterSection = (): JSX.Element => {
       </div>
 
       {/* Copyright */}
-      <div className="relative w-fit [font-family:'IBM_Plex_Mono',monospace] font-bold text-white text-base text-center tracking-[0] leading-5 px-4">
+      <div className="relative w-fit [font-family:'IBM_Plex_Mono',monospace] font-bold text-white text-sm sm:text-base text-center tracking-[0] leading-5 px-4">
         © 2024 BitcoinAttention. All rights reserved.
       </div>
 
       {/* Social Media Icons */}
-      <div className="inline-flex items-center gap-6 relative">
+      <div className="inline-flex items-center gap-4 md:gap-6 relative">
         {socialLinks.map((social, index) => (
           <a 
             key={index} 
             href={social.href} 
             aria-label={social.alt}
-            className="w-12 h-12 rounded-full bg-[#333333] flex items-center justify-center text-white hover:bg-[#444444] transition-colors"
+            className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#333333] flex items-center justify-center text-white hover:bg-[#444444] transition-colors"
           >
             {social.icon}
           </a>

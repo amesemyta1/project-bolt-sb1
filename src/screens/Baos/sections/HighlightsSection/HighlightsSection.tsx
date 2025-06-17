@@ -25,7 +25,7 @@ export const HighlightsSection = (): JSX.Element => {
   return (
     <div className="flex flex-col w-full items-start justify-center gap-5">
       <div className="flex flex-col items-start gap-8 md:gap-10 w-full">
-        <h2 className="w-full [font-family:'SF_Mono-Heavy',Helvetica] font-normal text-white text-2xl md:text-3xl lg:text-4xl">
+        <h2 className="w-full [font-family:'SF_Mono-Heavy',Helvetica] font-normal text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl">
           3‑Step Flight Path
         </h2>
       </div>
@@ -37,15 +37,15 @@ export const HighlightsSection = (): JSX.Element => {
               key={index}
               className="flex items-center gap-5 py-[15px] w-full border-b border-[#ffffff1a]"
             >
-              <div className="[font-family:'IBM_Plex_Mono',monospace] font-bold text-white text-2xl md:text-3xl lg:text-[40px] whitespace-nowrap flex-shrink-0">
+              <div className="[font-family:'IBM_Plex_Mono',monospace] font-bold text-white text-xl sm:text-2xl md:text-3xl lg:text-[40px] whitespace-nowrap flex-shrink-0">
                 {step.number}
               </div>
 
               <div className="flex flex-col items-start justify-center gap-[5px] flex-1">
-                <div className="w-full [font-family:'IBM_Plex_Mono',monospace] font-bold text-[#f8c100] text-base md:text-lg">
+                <div className="w-full [font-family:'IBM_Plex_Mono',monospace] font-bold text-[#f8c100] text-sm sm:text-base md:text-lg">
                   {step.title}
                 </div>
-                <div className="w-full [font-family:'IBM_Plex_Sans',sans-serif] font-semibold text-[#969696] text-base md:text-lg leading-[1.4] md:leading-[23.4px]">
+                <div className="w-full [font-family:'IBM_Plex_Sans',sans-serif] font-semibold text-[#969696] text-sm sm:text-base md:text-lg leading-[1.4] md:leading-[23.4px]">
                   {step.description}
                 </div>
               </div>

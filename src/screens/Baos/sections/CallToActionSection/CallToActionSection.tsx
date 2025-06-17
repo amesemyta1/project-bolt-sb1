@@ -38,15 +38,11 @@ const features = [
 export const CallToActionSection = (): JSX.Element => {
   return (
     <section
-      className="w-full py-12 md:py-24 bg-[#0a0909] relative"
-      style={{ 
-        paddingLeft: '200px', 
-        paddingRight: '200px' 
-      }}
+      className="w-full py-8 md:py-12 lg:py-24 bg-[#0a0909] relative px-4 sm:px-8 md:px-16 lg:px-[200px]"
     >
       {/* Centered background image container */}
       <div 
-        className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[1040px] h-[680px] bg-cover bg-center rounded-lg"
+        className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[1040px] h-[400px] sm:h-[500px] md:h-[680px] bg-cover bg-center rounded-lg"
         style={{ 
           backgroundImage: "url(/w8f2b5ff.png)",
           backgroundSize: 'cover',
@@ -59,19 +55,19 @@ export const CallToActionSection = (): JSX.Element => {
       </div>
       
       <div className="relative z-10 w-full max-w-5xl mx-auto">
-        <div className="flex flex-col items-start gap-8 md:gap-10 p-6 md:p-8 lg:p-16 xl:p-24">
-          <div className="flex flex-col w-full items-start gap-8 md:gap-10">
+        <div className="flex flex-col items-start gap-6 md:gap-8 lg:gap-10 p-4 sm:p-6 md:p-8 lg:p-16 xl:p-24">
+          <div className="flex flex-col w-full items-start gap-6 md:gap-8 lg:gap-10">
             <div className="flex flex-col items-start gap-2.5 w-full text-left">
-              <h2 className="text-white text-2xl md:text-3xl lg:text-4xl [font-family:'IBM_Plex_Mono',monospace] font-bold tracking-[0] leading-normal">
+              <h2 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl [font-family:'IBM_Plex_Mono',monospace] font-bold tracking-[0] leading-normal">
                 Stop renting attention. Start owning fans — and the Bitcoin they
                 mint.
               </h2>
-              <p className="text-[#c3c3c3] text-base md:text-lg [font-family:'IBM_Plex_Sans',sans-serif] font-semibold tracking-[0] leading-normal">
+              <p className="text-[#c3c3c3] text-sm sm:text-base md:text-lg [font-family:'IBM_Plex_Sans',sans-serif] font-semibold tracking-[0] leading-normal">
                 Tech Under the Hood — Built for Bitcoin Legends
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[50px] w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-[50px] w-full">
               {features.slice(0, 3).map((feature) => (
                 <div
                   key={feature.id}
@@ -98,7 +94,7 @@ export const CallToActionSection = (): JSX.Element => {
                     </div>
                   </div>
                   
-                  <div className="flex-1 [font-family:'SF_Pro_Display-Semibold',Helvetica] font-normal text-[#c3c3c3] text-base md:text-lg tracking-[0] leading-normal">
+                  <div className="flex-1 [font-family:'SF_Pro_Display-Semibold',Helvetica] font-normal text-[#c3c3c3] text-sm sm:text-base md:text-lg tracking-[0] leading-normal">
                     <span className="text-white font-semibold">{feature.title}</span>
                     <br />
                     {feature.description}
@@ -107,7 +103,7 @@ export const CallToActionSection = (): JSX.Element => {
               ))}
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-[50px] w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-[50px] w-full">
               {features.slice(3, 6).map((feature) => (
                 <div
                   key={feature.id}
@@ -134,7 +130,7 @@ export const CallToActionSection = (): JSX.Element => {
                     </div>
                   </div>
                   
-                  <div className="flex-1 [font-family:'SF_Pro_Display-Semibold',Helvetica] font-normal text-[#c3c3c3] text-base md:text-lg tracking-[0] leading-normal">
+                  <div className="flex-1 [font-family:'SF_Pro_Display-Semibold',Helvetica] font-normal text-[#c3c3c3] text-sm sm:text-base md:text-lg tracking-[0] leading-normal">
                     <span className="text-white font-semibold">{feature.title}</span>
                     <br />
                     {feature.description}
@@ -144,13 +140,13 @@ export const CallToActionSection = (): JSX.Element => {
             </div>
 
             {/* Buttons positioned at the bottom left */}
-            <div className="flex flex-col sm:flex-row items-start gap-5 w-full justify-start mt-8">
-              <Button className="h-12 md:h-14 px-6 md:px-8 py-3 bg-[#f8c100] text-[#0a0909] rounded-lg [font-family:'SF_Mono-Bold',Helvetica] font-bold text-sm md:text-base tracking-[0] leading-5 hover:bg-[#e0ae00] w-full sm:w-auto transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(248,193,0,0.5)] hover:brightness-110 cursor-pointer">
+            <div className="flex flex-col sm:flex-row items-start gap-5 w-full justify-start mt-6 md:mt-8">
+              <Button className="h-12 md:h-14 px-4 sm:px-6 md:px-8 py-3 bg-[#f8c100] text-[#0a0909] rounded-lg [font-family:'SF_Mono-Bold',Helvetica] font-bold text-sm md:text-base tracking-[0] leading-5 hover:bg-[#e0ae00] w-full sm:w-auto transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(248,193,0,0.5)] hover:brightness-110 cursor-pointer">
                 LAUNCH YOUR BAOS HUB
               </Button>
               <Button
                 variant="outline"
-                className="h-12 md:h-14 px-6 md:px-8 py-3 bg-[#f8c10033] text-[#f8c100] border-none rounded-lg [font-family:'SF_Mono-Bold',Helvetica] font-bold text-sm md:text-base tracking-[0] leading-5 hover:bg-[#f8c10055] w-full sm:w-auto transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(248,193,0,0.3)] hover:brightness-110 cursor-pointer"
+                className="h-12 md:h-14 px-4 sm:px-6 md:px-8 py-3 bg-[#f8c10033] text-[#f8c100] border-none rounded-lg [font-family:'SF_Mono-Bold',Helvetica] font-bold text-sm md:text-base tracking-[0] leading-5 hover:bg-[#f8c10055] w-full sm:w-auto transition-all duration-300 hover:scale-110 hover:shadow-[0_0_20px_rgba(248,193,0,0.3)] hover:brightness-110 cursor-pointer"
               >
                 SCHEDULE A CALL
               </Button>

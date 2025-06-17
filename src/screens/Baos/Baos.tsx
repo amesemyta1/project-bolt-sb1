@@ -157,13 +157,13 @@ export const Baos = (): JSX.Element => {
           <div className="absolute inset-0 flex items-center z-10">
             <div className="px-4 md:px-8 lg:px-16 xl:px-24 ml-0 lg:ml-[60px] max-w-none">
               <div className="flex flex-col items-start justify-center gap-6 lg:gap-8">
-                <h1 className="text-white [font-family:'IBM_Plex_Mono',monospace] font-bold text-[32px] md:text-[44px] lg:text-[56px] xl:text-[72px] leading-[1.1] tracking-tight">
+                <h1 className="text-white [font-family:'IBM_Plex_Mono',monospace] font-bold text-[28px] sm:text-[32px] md:text-[44px] lg:text-[56px] xl:text-[72px] leading-[1.1] tracking-tight">
                   Turn Free Digital Labour
                   <br />
                   into Real Bitcoin
                 </h1>
 
-                <p className="[font-family:'IBM_Plex_Sans',sans-serif] font-semibold text-[#c3c3c3] text-base md:text-lg lg:text-xl xl:text-2xl leading-[1.4] md:leading-[1.5] lg:leading-[1.6] max-w-[700px]">
+                <p className="[font-family:'IBM_Plex_Sans',sans-serif] font-semibold text-[#c3c3c3] text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-[1.4] md:leading-[1.5] lg:leading-[1.6] max-w-[700px]">
                   You've gathered the crowd; now turn every tap, swipe, and share
                   into spendable sats. BAOS — The Bitcoin Attention Operating System
                   on Bitcoin Layer‑2 — lets project owners mint Bitcoin from the energy
@@ -172,9 +172,9 @@ export const Baos = (): JSX.Element => {
 
                 <Button 
                   onClick={handleLaunchHubClick}
-                  className="h-12 md:h-14 lg:h-16 px-6 md:px-8 lg:px-10 py-3 bg-[#f8c100] hover:bg-[#e0af00] rounded-lg mt-4 md:mt-6 lg:mt-8 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(248,193,0,0.5)] cursor-pointer"
+                  className="h-12 md:h-14 lg:h-16 px-4 sm:px-6 md:px-8 lg:px-10 py-3 bg-[#f8c100] hover:bg-[#e0af00] rounded-lg mt-4 md:mt-6 lg:mt-8 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_20px_rgba(248,193,0,0.5)] cursor-pointer"
                 >
-                  <span className="[font-family:'IBM_Plex_Mono',monospace] font-bold text-[#0a0909] text-sm md:text-base lg:text-lg leading-5">
+                  <span className="[font-family:'IBM_Plex_Mono',monospace] font-bold text-[#0a0909] text-xs sm:text-sm md:text-base lg:text-lg leading-5">
                     LAUNCH YOUR BAOS HUB
                   </span>
                 </Button>
@@ -186,16 +186,15 @@ export const Baos = (): JSX.Element => {
         {/* Navigation Features Section */}
         <section 
           id="manifesto" 
-          className="w-full py-12 md:py-24 bg-[#0a0909]"
-          style={{ paddingLeft: '200px', paddingRight: '200px' }}
+          className="w-full py-8 md:py-12 lg:py-24 bg-[#0a0909] px-4 sm:px-8 md:px-16 lg:px-[200px]"
         >
           <div 
             className="flex flex-col lg:flex-row w-full max-w-[1440px] items-start gap-8 md:gap-16 lg:gap-[120px] mx-auto" 
             style={{ alignItems: 'center' }}
           >
             <div 
-              className="w-full lg:w-[480px] [font-family:'IBM_Plex_Mono',monospace] font-bold text-white text-2xl md:text-3xl lg:text-4xl leading-[1.2]" 
-              style={{ width: '900px' }}
+              className="w-full lg:w-[480px] [font-family:'IBM_Plex_Mono',monospace] font-bold text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-[1.2]" 
+              style={{ width: '100%', maxWidth: '900px' }}
             >
               Stop leaking value
               <br />
@@ -216,7 +215,7 @@ export const Baos = (): JSX.Element => {
                   />
                 </div>
                 <div className="flex flex-col items-start gap-[7.5px] px-0 py-[2.25px] flex-1">
-                  <div className="self-stretch mt-[-0.75px] [font-family:'SF_Mono-Bold',Helvetica] font-bold text-[#f8c100] text-base md:text-lg">
+                  <div className="self-stretch mt-[-0.75px] [font-family:'SF_Mono-Bold',Helvetica] font-bold text-[#f8c100] text-sm sm:text-base md:text-lg">
                     Instant Layer‑2 payouts per fan action
                   </div>
                 </div>
@@ -231,7 +230,7 @@ export const Baos = (): JSX.Element => {
                   />
                 </div>
                 <div className="flex flex-col items-start gap-[7.5px] px-0 py-[2.25px] flex-1">
-                  <div className="self-stretch mt-[-0.75px] [font-family:'SF_Mono-Bold',Helvetica] font-bold text-[#f8c100] text-base md:text-lg">
+                  <div className="self-stretch mt-[-0.75px] [font-family:'SF_Mono-Bold',Helvetica] font-bold text-[#f8c100] text-sm sm:text-base md:text-lg">
                     On‑chain proof of engagement (no bots, no fraud)
                   </div>
                 </div>
@@ -246,7 +245,7 @@ export const Baos = (): JSX.Element => {
                   />
                 </div>
                 <div className="flex flex-col items-start gap-[7.5px] px-0 py-[2.25px] flex-1">
-                  <div className="self-stretch mt-[-0.75px] [font-family:'SF_Mono-Bold',Helvetica] font-bold text-[#f8c100] text-base md:text-lg">
+                  <div className="self-stretch mt-[-0.75px] [font-family:'SF_Mono-Bold',Helvetica] font-bold text-[#f8c100] text-sm sm:text-base md:text-lg">
                     Built‑in game loops that boost retention
                   </div>
                 </div>
@@ -258,12 +257,10 @@ export const Baos = (): JSX.Element => {
         {/* Features Section with Background Pattern */}
         <section 
           id="how-it-works" 
-          className="relative w-full py-12 bg-[#0a0909]"
+          className="relative w-full py-8 md:py-12 bg-[#0a0909] px-4 sm:px-8 md:px-16 lg:px-[200px]"
           style={{
-            height: '360px',
-            alignContent: 'center',
-            paddingLeft: '200px',
-            paddingRight: '200px'
+            minHeight: '300px',
+            alignContent: 'center'
           }}
         >
           {/* Background Pattern - Hidden on mobile for performance */}
@@ -296,17 +293,15 @@ export const Baos = (): JSX.Element => {
         {/* Hero Cards Section - NO BACKGROUND PATTERN */}
         <section 
           id="baos" 
-          className="w-full py-12 bg-[#0a0909]"
+          className="w-full py-8 md:py-12 bg-[#0a0909] px-4 sm:px-8 md:px-16 lg:px-[200px]"
           style={{
-            paddingBottom: '10px',
-            paddingLeft: '200px',
-            paddingRight: '200px'
+            paddingBottom: '10px'
           }}
         >
           <div 
             className="max-w-[1440px] mx-auto"
             style={{
-              marginTop: '-8rem'
+              marginTop: '-4rem'
             }}
           >
             <HeroSection />
@@ -314,8 +309,7 @@ export const Baos = (): JSX.Element => {
         </section>
 
         <div 
-          className="[font-family:'SF_Pro_Display-Semibold',Helvetica] font-normal text-[#969696] text-base md:text-lg tracking-[0] leading-[23.4px] bg-[#0a0909]"
-          style={{ paddingLeft: '200px', paddingRight: '200px' }}
+          className="[font-family:'SF_Pro_Display-Semibold',Helvetica] font-normal text-[#969696] text-sm sm:text-base md:text-lg tracking-[0] leading-[23.4px] bg-[#0a0909] px-4 sm:px-8 md:px-16 lg:px-[200px]"
         >
           <div className="max-w-[1440px] mx-auto text-left">
             No external platforms. No rent seekers. Just you, your fans, and Bitcoin.
@@ -325,8 +319,7 @@ export const Baos = (): JSX.Element => {
         {/* Two-column layout for Introduction and Highlights sections */}
         <section 
           id="stories" 
-          className="w-full py-12 md:py-24 bg-[#0a0909]"
-          style={{ paddingLeft: '200px', paddingRight: '200px' }}
+          className="w-full py-8 md:py-12 lg:py-24 bg-[#0a0909] px-4 sm:px-8 md:px-16 lg:px-[200px]"
         >
           <div 
             className="flex flex-col lg:flex-row gap-8 md:gap-16 lg:gap-[120px] max-w-[1440px] mx-auto"
@@ -350,8 +343,7 @@ export const Baos = (): JSX.Element => {
 
         {/* Two-column layout for Flight Path section */}
         <section 
-          className="w-full py-12 md:py-24 bg-[#0a0909]"
-          style={{ paddingLeft: '200px', paddingRight: '200px' }}
+          className="w-full py-8 md:py-12 lg:py-24 bg-[#0a0909] px-4 sm:px-8 md:px-16 lg:px-[200px]"
         >
           <div 
             className="flex flex-col lg:flex-row gap-8 md:gap-16 lg:gap-[120px] max-w-[1440px] mx-auto"
@@ -375,12 +367,10 @@ export const Baos = (): JSX.Element => {
 
         {/* Flight Path Section with Background Pattern */}
         <section 
-          className="relative w-full py-12 md:py-24 bg-[#0a0909]"
+          className="relative w-full py-8 md:py-12 lg:py-24 bg-[#0a0909] px-4 sm:px-8 md:px-16 lg:px-[200px]"
           style={{ 
-            paddingLeft: '200px', 
-            paddingRight: '200px',
             paddingBottom: '0',
-            marginBottom: '-100px'
+            marginBottom: '-50px'
           }}
         >
           {/* Background Pattern - Hidden on mobile for performance */}
@@ -414,7 +404,7 @@ export const Baos = (): JSX.Element => {
 
           <div className="relative z-10 max-w-[1440px] mx-auto">
             <div 
-              className="w-full [font-family:'IBM_Plex_Mono',monospace] font-bold text-white text-2xl md:text-3xl lg:text-4xl tracking-[0] leading-[normal] mb-8 md:mb-12"
+              className="w-full [font-family:'IBM_Plex_Mono',monospace] font-bold text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-[0] leading-[normal] mb-8 md:mb-12"
               style={{
                 marginBottom: '0px',
                 paddingTop: '35px',
@@ -429,7 +419,7 @@ export const Baos = (): JSX.Element => {
             {/* With BAOS you'll section */}
             <div className="mb-8 md:mb-12">
               <div 
-                className="w-full max-w-[402px] mb-6 md:mb-[30px] [font-family:'SF_Pro_Display-Semibold',Helvetica] font-normal text-[#969696] text-base md:text-lg tracking-[0] leading-[23.4px]"
+                className="w-full max-w-[402px] mb-6 md:mb-[30px] [font-family:'SF_Pro_Display-Semibold',Helvetica] font-normal text-[#969696] text-sm sm:text-base md:text-lg tracking-[0] leading-[23.4px]"
                 style={{
                   marginLeft: '0px',
                   marginBottom: '10px',
@@ -445,7 +435,7 @@ export const Baos = (): JSX.Element => {
             {/* Ignore it and you'll section */}
             <div>
               <div 
-                className="w-full max-w-[402px] mb-6 md:mb-8 [font-family:'SF_Pro_Display-Semibold',Helvetica] font-normal text-[#969696] text-base md:text-lg tracking-[0] leading-[23.4px]"
+                className="w-full max-w-[402px] mb-6 md:mb-8 [font-family:'SF_Pro_Display-Semibold',Helvetica] font-normal text-[#969696] text-sm sm:text-base md:text-lg tracking-[0] leading-[23.4px]"
                 style={{
                   marginLeft: '0px',
                   marginBottom: '10px',
@@ -458,7 +448,7 @@ export const Baos = (): JSX.Element => {
               {/* Negative outcome cards */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-2.5 w-full">
                 <div
-                  className="w-full h-full p-[30px] flex flex-col justify-start items-start gap-[15px]"
+                  className="w-full h-full p-[20px] sm:p-[30px] flex flex-col justify-start items-start gap-[15px]"
                   style={{
                     background: 'rgba(255, 255, 255, 0.05)',
                     outline: '1px rgba(255, 255, 255, 0.10) solid',
@@ -504,7 +494,7 @@ export const Baos = (): JSX.Element => {
                     className="self-stretch"
                     style={{
                       color: '#F8C200',
-                      fontSize: '18px',
+                      fontSize: '16px',
                       fontFamily: 'SF Mono',
                       fontWeight: '700',
                       wordWrap: 'break-word',
@@ -516,7 +506,7 @@ export const Baos = (): JSX.Element => {
                 </div>
 
                 <div
-                  className="w-full h-full p-[30px] flex flex-col justify-start items-start gap-[15px]"
+                  className="w-full h-full p-[20px] sm:p-[30px] flex flex-col justify-start items-start gap-[15px]"
                   style={{
                     background: 'rgba(255, 255, 255, 0.05)',
                     outline: '1px rgba(255, 255, 255, 0.10) solid',
@@ -562,7 +552,7 @@ export const Baos = (): JSX.Element => {
                     className="self-stretch"
                     style={{
                       color: '#F8C200',
-                      fontSize: '18px',
+                      fontSize: '16px',
                       fontFamily: 'SF Mono',
                       fontWeight: '700',
                       wordWrap: 'break-word',
@@ -574,7 +564,7 @@ export const Baos = (): JSX.Element => {
                 </div>
 
                 <div
-                  className="w-full h-full p-[30px] flex flex-col justify-start items-start gap-[15px]"
+                  className="w-full h-full p-[20px] sm:p-[30px] flex flex-col justify-start items-start gap-[15px]"
                   style={{
                     background: 'rgba(255, 255, 255, 0.05)',
                     outline: '1px rgba(255, 255, 255, 0.10) solid',
@@ -620,7 +610,7 @@ export const Baos = (): JSX.Element => {
                     className="self-stretch"
                     style={{
                       color: '#F8C200',
-                      fontSize: '18px',
+                      fontSize: '16px',
                       fontFamily: 'SF Mono',
                       fontWeight: '700',
                       wordWrap: 'break-word',
